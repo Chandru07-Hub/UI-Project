@@ -30,7 +30,7 @@ public class JobSearchSteps {
     @Before
     public void setUp() {
         // Set the path for ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:/Users/k50/.cache/selenium/chromedriver/win64/131.0.6778.85/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
         
         // Initialize ChromeDriver
         driver = new ChromeDriver();
